@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,700;1,400&display=swap');
+
+
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);;
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VerydarkBlue: hsl(216, 12%, 8%);
+    --Fontsizeparagraph: 15px;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--LightGrey);
+    background-color: var(--VerydarkBlue);
+}
+
+.rate-state, .thank-state {
+    background-color: var(--DarkBlue);
+    border-radius: 15px;
+    max-width: 400px;
+    padding: 1.5rem;
+}
+
+/***************************/
+
+.rate-state img {
+    background-color: var(--VerydarkBlue);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.numbers {
+    display: flex;
+    justify-content: space-around;
+    margin: 0.5rem 0;
+}
+
+.numbers button {
+    padding: 1rem;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--VerydarkBlue);
+    color: var(--LightGrey);
+    cursor: pointer;
+    
+}
+
+.submit {
+    padding: 0.7rem;
+    width: 100%;
+    background-color: var(--Orange);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    margin: 0.5rem 0;
+}
+
+.submit:hover{
+    color: var(--Orange);
+    background-color: white;
+}
+
+
+.numbers button:hover{
+    color:white;
+    background-color:  var(--Orange);
+}
+
+.numbers button:focus {
+    background-color: var(--MediumGrey);
+    color: white;
+
+}
+
+
+
+
+
+/*********************************************/
+
+.thank-state{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.thank-state img{
+    margin: 1rem 0;
+}
+
+h2{
+    color: white;
+    margin: 0.5rem 0;
+}
+
+.select{
+    color: var(--Orange);
+    background-color: var(--MediumGrey);
+    border-radius: 15px;
+    max-width: 200px;
+    padding: 0.4em;
+    margin: 0.5rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************js related***********/
+
+.hide{
+    display: none;
+}
+
+.error-msg {
+   color: var(--Orange);
+ }
